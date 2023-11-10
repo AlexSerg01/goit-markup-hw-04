@@ -123,11 +123,18 @@ body {
       padding: 24px 0;
       display: block;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
     }
 
-    .nav-link:hover::after,
-    .nav-link:focus::after {
+    .nav-link:hover {
+      color: var(--OCEAN)
+    }
+
+    .curent {
+      position: relative;
+      color: var(--OCEAN);
+    }
+
+    .curent::after {
       color: var(--OCEAN);
       display: block;
       width: 100%;
@@ -374,7 +381,7 @@ body {
   .team-li:hover .team-social-link:hover,
   .team-li:hover .team-social-link:focus {
     
-    background-color: var(--GREEN);
+    background-color: var(--OCEAN);
     
   }
 
@@ -517,3 +524,9 @@ body {
   .footer-link-block .team-social {
     gap: 16px;
   }
+  
+  .footer-link-block .team-social .team-social-links .team-social-link:hover,
+  .footer-link-block .team-social .team-social-links .team-social-link:focus {
+    background-color: var(--GREEN);
+  }
+  
