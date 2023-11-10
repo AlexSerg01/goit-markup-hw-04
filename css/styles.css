@@ -377,7 +377,7 @@ body {
   }
 
   .team-li:hover .team-social-link:hover,
-  .team-li:hover .team-social-link:focus {
+  .team-li:focus .team-social-link:focus {
     
     background-color: var(--OCEAN);
     
